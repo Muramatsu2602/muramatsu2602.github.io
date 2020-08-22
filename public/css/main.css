@@ -21,9 +21,14 @@
     --color-box-footer: #FAFAFC;
     --color-small-info: #c1bccc;
 
+    /*Kenzo's Pallete*/
+    --color-index-secondary: #03045e;
+    --color-index-primary: #0077b6;
+    --color-index-light: #ade8f4;
     /*Tamanho da fonte padrao: 16px - 100% - 1rem */
     font-size: 60%;
 }
+
 /* any element */
 * {
     margin: 0;
@@ -31,13 +36,13 @@
     box-sizing: border-box;
 }
 
-html, 
+html,
 body {
     height: 100vh;
 }
 
 body {
-    background-color: var(--color-box-base);
+    background-color: var( --color-index-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,10 +50,52 @@ body {
 
 #never-give-up {
     display: flex;
+    padding: 0;
+
+    background: var(--color-index-primary);
+}
+
+#never-give-up h1 {
+    max-width: 700px;
 
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     font-family: Archivo;
 
-    background: var(--color-primary);
+    color: var(--color-input-background);
+
+    padding: 1.2rem;
+    align-self: center;
+}
+
+#never-give-up img {
+    cursor: pointer;
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+/* Box model --> responsible */
+#container {
+    width: 90vw;
+    max-width: 700px;
+} 
+
+
+@media (min-width: 700px){
+    :root {
+        font-size: 62.5%; /*todo rem vai ser relativo a 10px --> equivalencia*/
+    } 
 }
