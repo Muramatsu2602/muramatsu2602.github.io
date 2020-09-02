@@ -1,3 +1,20 @@
 /*
     Here comes the header
 */
+header {
+    min-height: 100px;
+    background-color: var(--color-line-in-white);
+}
+
+
+header .header-content {
+
+    font-weight: 100;
+    font-size: 3rem;
+    font-family: Archivo;
+
+    padding: 1rem;
+    text-align: center;
+
+    color: var(--color-index-secondary);
+}
