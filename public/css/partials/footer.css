@@ -1,19 +1,23 @@
 footer {
-    min-height: 100px;
-    
-    background-color: var(--color-index-secondary);
+	min-height: 100px;
+
+	background-color: var(--color-index-secondary);
 }
 
-footer .footer-content {
-    
-    font-weight: 100;
-    font-size: 3rem;
-    font-family: Archivo;
-
-    padding: 1rem;
-
-    color: var(--color-line-in-white);
+footer a {
+	color: white;
+    font-size: 2rem;
 }
-@media (min-width:700px) { 
 
+
+.footer-content {
+	font-weight: 100;
+	font-size: 3rem;
+	font-family: Archivo;
+
+	padding: 1rem;
+
+	color: var(--color-line-in-white);
+}
+@media (min-width: 700px) {
 }
